@@ -320,3 +320,8 @@ Logo và tên tiêu đề Learn Track sẽ đưa ra giữa. Lược bỏ dòng m
 - **Prompt đã dùng:** Phân tích trang web và tạo nội dung vào file readme. Sau đó push toàn bộ lên repo của tôi.
 - **Kết quả AI tạo ra:** Phân tích cấu trúc, giao diện, công nghệ, khả năng responsive, accessibility, tài nguyên hình ảnh và giới hạn hiện tại; sau đó cập nhật `README.md` với hướng dẫn và mô tả dự án.
 - **Nhận xét & Tinh chỉnh của SV:** README cần phản ánh đúng trạng thái website frontend tĩnh và cấu trúc tài nguyên hiện tại.
+
+### Lần 38: Rà soát checklist kỹ thuật tối thiểu
+- **Prompt đã dùng:** II. YÊU CẦU KỸ THUẬT VÀ KHUNG TỐI THIỂU CỦA WEBSITE ... Rà soát lại xem đã có đủ như yêu cầu chưa
+- **Kết quả AI tạo ra:** Kiểm tra semantic HTML5, CSS Variables, Grid/Flexbox, Animate.css, AOS, hover và focus trên toàn bộ website; đồng bộ liên kết thư viện, class Animate.css và thuộc tính `data-aos` cho trang chủ.
+- **Nhận xét & Tinh chỉnh của SV:** Giữ website không dùng JavaScript nên AOS CDN được kết hợp với fallback CSS hiện có để nội dung vẫn hiển thị khi không có JavaScript.

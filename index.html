@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="LHULearnTrack - nền tảng quản lý lộ trình học tập cá nhân.">
   <title>LHULearnTrack | Trang chủ</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -37,32 +39,32 @@
   </header>
 
   <main class="home-main">
-    <section class="home-hero" aria-labelledby="home-heading">
+    <section class="home-hero animate__animated animate__fadeInDown" aria-labelledby="home-heading" data-aos="fade-up">
       <p class="eyebrow">Học tập có định hướng</p>
-      <h1 id="home-heading">Xây dựng tương lai của bạn từng bước một</h1>
+      <h1 id="home-heading" class="animate__animated animate__fadeIn">Xây dựng tương lai của bạn từng bước một</h1>
       <p>Theo dõi tiến độ, khám phá lộ trình và hiểu rõ kết quả học tập trên một nền tảng đơn giản, trực quan.</p>
       <div class="hero-actions">
-        <a class="button button-primary" href="dashboard.html">Mở Dashboard</a>
-        <a class="button button-secondary" href="learning-path.html">Xem lộ trình</a>
+        <a class="button button-primary animate__animated animate__pulse" href="dashboard.html">Mở Dashboard</a>
+        <a class="button button-secondary animate__animated animate__pulse" href="learning-path.html">Xem lộ trình</a>
       </div>
     </section>
 
-    <section aria-labelledby="features-heading">
+    <section aria-labelledby="features-heading" data-aos="fade-up">
       <h2 id="features-heading">Mọi thứ bạn cần để học tốt hơn</h2>
       <div class="feature-grid">
-        <article>
+        <article data-aos="fade-right">
           <span class="feature-icon" aria-hidden="true">📊</span>
           <h3>Dashboard cá nhân</h3>
           <p>Nắm bắt tiến độ học tập và mục tiêu của bạn trong một màn hình tổng quan.</p>
           <a href="dashboard.html">Xem dashboard</a>
         </article>
-        <article>
+        <article data-aos="fade-up">
           <span class="feature-icon" aria-hidden="true">🧭</span>
           <h3>Lộ trình rõ ràng</h3>
           <p>Biết mình đang ở đâu và bước tiếp theo cần hoàn thành là gì.</p>
           <a href="learning-path.html">Khám phá lộ trình</a>
         </article>
-        <article>
+        <article data-aos="fade-left">
           <span class="feature-icon" aria-hidden="true">📈</span>
           <h3>Thống kê trực quan</h3>
           <p>Đánh giá kết quả qua điểm số và biểu đồ dễ đọc, dễ theo dõi.</p>
@@ -71,7 +73,7 @@
       </div>
     </section>
 
-    <section class="home-summary" aria-labelledby="summary-heading">
+    <section class="home-summary" aria-labelledby="summary-heading" data-aos="zoom-in">
       <div>
         <p class="eyebrow">Tiến độ hiện tại</p>
         <h2 id="summary-heading">Bạn đã hoàn thành 68% mục tiêu tháng này</h2>
