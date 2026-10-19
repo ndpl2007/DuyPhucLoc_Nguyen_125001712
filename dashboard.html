@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Dashboard cá nhân theo dõi tiến độ học tập.">
+  <title>LHULearnTrack | Dashboard cá nhân</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="brand"><a href="index.html" aria-label="LHULearnTrack - Trang chủ">LHULearnTrack</a></div>
+    <nav aria-label="Điều hướng chính">
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <label for="menu-toggle" class="menu-button" aria-label="Mở hoặc đóng menu"><span></span><span></span><span></span></label>
+      <ul>
+        <li><a href="index.html">Trang chủ</a></li>
+        <li><a href="dashboard.html" aria-current="page">Dashboard cá nhân</a></li>
+        <li><a href="learning-path.html">Lộ trình học tập</a></li>
+        <li><a href="statistics.html">Thống kê điểm số</a></li>
+      </ul>
+    </nav>
+    <details class="account-menu">
+      <summary aria-label="Mở menu quản lý tài khoản">PL</summary>
+      <div class="account-dropdown">
+        <strong>Nguyễn Duy Phúc Lộc</strong>
+        <a href="#profile">Hồ sơ cá nhân</a>
+        <a href="#settings">Cài đặt tài khoản</a>
+        <a href="#help">Trợ giúp</a>
+        <a href="index.html">Đăng xuất</a>
+      </div>
+    </details>
+  </header>
+
+  <main id="dashboard" aria-label="Dashboard học tập cá nhân">
+    <section id="welcome" class="animate__animated animate__fadeInDown" aria-labelledby="welcome-heading" data-aos="fade-up">
+      <div class="welcome-copy">
+        <p>Chào buổi sáng!</p>
+        <h1 id="welcome-heading" class="animate__animated animate__fadeIn">Tiếp tục hành trình học tập của bạn</h1>
+        <p>Theo dõi tiến độ, hoàn thành mục tiêu và phát triển kỹ năng mỗi ngày.</p>
+        <a class="animate__animated animate__pulse" href="#courses">Tiếp tục học</a>
+      </div>
+    </section>
+    <section id="overview" aria-labelledby="overview-heading" data-aos="fade-up">
+      <h2 id="overview-heading">Tổng quan tiến độ học tập</h2>
+      <div class="overview-grid">
+        <article class="animate__animated animate__zoomIn"><h3>Tổng khóa học</h3><p>12</p></article>
+        <article class="animate__animated animate__zoomIn"><h3>Đang học</h3><p>05</p></article>
+        <article class="animate__animated animate__zoomIn"><h3>Đã hoàn thành</h3><p>04</p></article>
+        <article class="animate__animated animate__zoomIn"><h3>Thời gian đã học</h3><p>68 giờ</p></article>
+      </div>
+    </section>
+    <div class="dashboard-layout">
+      <div class="dashboard-content">
+        <section aria-labelledby="recent-heading" data-aos="fade-up">
+          <h2 id="recent-heading">Hoạt động gần đây</h2>
+          <ul class="activity-list">
+            <li><strong>Hoàn thành bài học:</strong> CSS Grid nâng cao <time datetime="2026-10-18">Hôm qua</time></li>
+            <li><strong>Đạt điểm mới:</strong> 9.2 trong bài kiểm tra HTML5 <time datetime="2026-10-17">2 ngày trước</time></li>
+            <li><strong>Bắt đầu khóa học:</strong> JavaScript nền tảng <time datetime="2026-10-15">4 ngày trước</time></li>
+          </ul>
+        </section>
+        <section id="courses" aria-labelledby="courses-heading" data-aos="fade-right">
+          <h2 id="courses-heading">Tiến độ khóa học</h2>
+          <article class="course-card course-card--in-progress" aria-labelledby="course-html-heading" data-aos="fade-up">
+            <header><img class="course-icon" src="assets/html5.webp" alt="Biểu tượng HTML5"><div><h3 id="course-html-heading">HTML &amp; CSS cơ bản</h3><p>Frontend Development</p></div></header>
+            <div class="progress-item">
+              <div class="progress-label"><span>Đang học</span><strong>80%</strong></div>
+              <div class="progress-bar" role="progressbar" aria-label="Tiến độ HTML và CSS cơ bản" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="--progress: 80%"><span></span></div>
+            </div>
+            <a href="#courses">Tiếp tục học</a>
+          </article>
+          <article class="course-card course-card--in-progress" aria-labelledby="course-js-heading" data-aos="fade-up">
+            <header><img class="course-icon" src="assets/javascript.webp" alt="Biểu tượng JavaScript"><div><h3 id="course-js-heading">JavaScript nền tảng</h3><p>Programming</p></div></header>
+            <div class="progress-item">
+              <div class="progress-label"><span>Đang học</span><strong>65%</strong></div>
+              <div class="progress-bar" role="progressbar" aria-label="Tiến độ JavaScript nền tảng" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="--progress: 65%"><span></span></div>
+            </div>
+            <a href="#courses">Tiếp tục học</a>
+          </article>
+          <article class="course-card course-card--in-progress" aria-labelledby="course-ui-heading" data-aos="fade-up">
+            <header><img class="course-icon" src="assets/css3.webp" alt="Biểu tượng CSS3"><div><h3 id="course-ui-heading">Thiết kế UI/UX</h3><p>Design</p></div></header>
+            <div class="progress-item">
+              <div class="progress-label"><span>Đang học</span><strong>45%</strong></div>
+              <div class="progress-bar" role="progressbar" aria-label="Tiến độ thiết kế UI và UX" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="--progress: 45%"><span></span></div>
+            </div>
+            <a href="#courses">Tiếp tục học</a>
+          </article>
+          <article class="course-card course-card--completed" aria-labelledby="course-git-heading" data-aos="fade-up">
+            <header><img class="course-icon" src="assets/github.webp" alt="Biểu tượng GitHub"><div><h3 id="course-git-heading">Git &amp; GitHub</h3><p>Công cụ phát triển</p></div></header>
+            <div class="progress-item">
+              <div class="progress-label"><span>Đã hoàn thành</span><strong>100%</strong></div>
+              <div class="progress-bar" role="progressbar" aria-label="Tiến độ Git và GitHub" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="--progress: 100%"><span></span></div>
+            </div>
+            <a href="#courses">Xem lại khóa học</a>
+          </article>
+          <article class="course-card course-card--not-started" aria-labelledby="course-react-heading" data-aos="fade-up">
+            <header><img class="course-icon" src="assets/react.webp" alt="Biểu tượng React"><div><h3 id="course-react-heading">React cơ bản</h3><p>Frontend Development</p></div></header>
+            <div class="progress-item">
+              <div class="progress-label"><span>Chưa bắt đầu</span><strong>0%</strong></div>
+              <div class="progress-bar" role="progressbar" aria-label="Tiến độ React cơ bản" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="--progress: 0%"><span></span></div>
+            </div>
+            <a href="#courses">Xem khóa học</a>
+          </article>
+        </section>
+        <section id="learning-path" aria-labelledby="learning-path-heading" data-aos="fade-right">
+          <h2 id="learning-path-heading">Lộ trình học tập</h2>
+          <div class="path-timeline">
+            <article class="path-card path-complete" aria-labelledby="dashboard-basic-title" data-aos="fade-up">
+              <span class="path-number" aria-hidden="true">01</span>
+              <div><p class="path-status">Đã hoàn thành</p><h3 id="dashboard-basic-title">Cơ bản</h3><p>HTML5, CSS3 và Git cơ bản.</p><p class="path-progress">Hoàn thành 100%</p></div>
+            </article>
+            <article class="path-card path-current" aria-labelledby="dashboard-practice-title" data-aos="fade-up">
+              <span class="path-number" aria-hidden="true">02</span>
+              <div><p class="path-status">Đang học</p><h3 id="dashboard-practice-title">Thực hành</h3><p>JavaScript, DOM và responsive web.</p><p class="path-progress">Hoàn thành 65%</p></div>
+            </article>
+            <article class="path-card path-next" aria-labelledby="dashboard-project-title" data-aos="fade-up">
+              <span class="path-number" aria-hidden="true">03</span>
+              <div><p class="path-status">Khóa tiếp theo</p><h3 id="dashboard-project-title">Dự án</h3><p>Phân tích yêu cầu và triển khai website.</p><p class="path-progress">Hoàn thành 20%</p></div>
+            </article>
+            <article class="path-card path-locked" aria-labelledby="dashboard-advanced-title" data-aos="fade-up">
+              <span class="path-number" aria-hidden="true">04</span>
+              <div><p class="path-status">Khóa tiếp theo</p><h3 id="dashboard-advanced-title">Nâng cao</h3><p>Framework, API và tối ưu hiệu năng.</p><p class="path-progress">Hoàn thành 0%</p></div>
+            </article>
+          </div>
+          <a href="learning-path.html">Xem chi tiết lộ trình</a>
+        </section>
+      </div>
+      <aside aria-labelledby="quick-info-heading" data-aos="fade-left">
+        <h2 id="quick-info-heading">Thông tin nhanh</h2>
+        <section aria-labelledby="goals-heading"><h3 id="goals-heading">Mục tiêu tuần này</h3><ul><li>Hoàn thành 3 bài học</li><li>Học ít nhất 5 giờ</li><li>Hoàn thành chương HTML cơ bản</li></ul></section>
+        <section aria-labelledby="schedule-heading"><h3 id="schedule-heading">Lịch học sắp tới</h3><ul><li>Thứ Hai: JavaScript DOM</li><li>Thứ Tư: Thiết kế responsive</li><li>Thứ Sáu: Kiểm tra tiến độ</li></ul></section>
+        <section aria-labelledby="stats-heading"><h3 id="stats-heading">Thống kê cá nhân</h3><ul><li>Chuỗi ngày học: 7 ngày</li><li>Bài kiểm tra tiếp theo: 2 ngày nữa</li><li>Thứ hạng trong lớp: 08/42</li></ul></section>
+      </aside>
+    </div>
+  </main>
+  <footer><div class="footer-info"><strong>LHULearnTrack</strong><address><span>Địa chỉ: Đường Huỳnh Văn Nghệ, phường Trấn Biên, TP Đồng Nai</span><a href="tel:+842812345678">Điện thoại: (028) 1234 5678</a><a href="mailto:hello@lhulearntrack.vn">Email: hello@lhulearntrack.vn</a></address><nav aria-label="Liên kết hỗ trợ"><a href="index.html">Trang chủ</a><a href="#contact">Liên hệ</a></nav></div><p>&copy; 2026 LHULearnTrack - Dashboard học tập cá nhân</p></footer>
+</body>
+</html>

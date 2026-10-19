@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Lộ trình học tập cá nhân của sinh viên trên LHULearnTrack.">
+  <title>LHULearnTrack | Lộ trình học tập</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="brand"><a href="index.html" aria-label="LHULearnTrack - Trang chủ">LHULearnTrack</a></div>
+    <nav aria-label="Điều hướng chính"><input type="checkbox" id="menu-toggle" class="menu-toggle"><label for="menu-toggle" class="menu-button" aria-label="Mở hoặc đóng menu"><span></span><span></span><span></span></label><ul><li><a href="index.html">Trang chủ</a></li><li><a href="dashboard.html">Dashboard cá nhân</a></li><li><a href="learning-path.html" aria-current="page">Lộ trình học tập</a></li><li><a href="statistics.html">Thống kê điểm số</a></li></ul></nav>
+    <details class="account-menu">
+      <summary aria-label="Mở menu quản lý tài khoản">PL</summary>
+      <div class="account-dropdown">
+        <strong>Nguyễn Duy Phúc Lộc</strong>
+        <a href="#profile">Hồ sơ cá nhân</a>
+        <a href="#settings">Cài đặt tài khoản</a>
+        <a href="#help">Trợ giúp</a>
+        <a href="index.html">Đăng xuất</a>
+      </div>
+    </details>
+  </header>
+  <main class="inner-main">
+    <section class="page-intro animate__animated animate__fadeInDown" aria-labelledby="path-title" data-aos="fade-up">
+      <p class="eyebrow">The Learning Path</p>
+      <h1 id="path-title" class="animate__animated animate__fadeIn">Lộ trình học tập của bạn</h1>
+      <p>Bốn giai đoạn được sắp xếp từ nền tảng đến nâng cao để bạn luôn biết bước tiếp theo.</p>
+    </section>
+    <section class="path-section" aria-labelledby="path-heading" data-aos="fade-up">
+      <h2 id="path-heading">Các giai đoạn phát triển</h2>
+      <div class="path-timeline">
+        <article class="path-card path-complete" aria-labelledby="foundation-title" data-aos="fade-up">
+          <span class="path-number" aria-hidden="true">01</span>
+          <div><p class="path-status">Đã hoàn thành</p><h3 id="foundation-title">Cơ bản</h3><p>HTML5, CSS3 và Git cơ bản</p><ul><li>HTML semantic</li><li>CSS layout</li><li>Quản lý mã nguồn</li></ul><p class="path-progress">Hoàn thành 100%</p><a href="dashboard.html">Xem lại nội dung</a></div>
+        </article>
+        <article class="path-card path-current" aria-labelledby="frontend-title" data-aos="fade-up">
+          <span class="path-number" aria-hidden="true">02</span>
+          <div><p class="path-status">Đang học</p><h3 id="frontend-title">Thực hành</h3><p>JavaScript, DOM và Responsive Web</p><ul><li>JavaScript nền tảng</li><li>Tương tác DOM</li><li>Thiết kế responsive</li></ul><p class="path-progress">Hoàn thành 65%</p><a href="dashboard.html">Tiếp tục học</a></div>
+        </article>
+        <article class="path-card path-next" aria-labelledby="project-title" data-aos="fade-up">
+          <span class="path-number" aria-hidden="true">03</span>
+          <div><p class="path-status">Khóa tiếp theo</p><h3 id="project-title">Dự án</h3><p>Thiết kế giao diện, làm việc nhóm và triển khai website</p><ul><li>Phân tích yêu cầu</li><li>Phối hợp nhóm</li><li>Triển khai sản phẩm</li></ul><p class="path-progress">Hoàn thành 20%</p><a href="#project-title">Xem mục tiêu</a></div>
+        </article>
+        <article class="path-card path-locked" aria-labelledby="advanced-title" data-aos="fade-up">
+          <span class="path-number" aria-hidden="true">04</span>
+          <div><p class="path-status">Khóa tiếp theo</p><h3 id="advanced-title">Nâng cao</h3><p>Framework, API và tối ưu hiệu năng</p><ul><li>Frontend framework</li><li>Kết nối API</li><li>Tối ưu trải nghiệm</li></ul><p class="path-progress">Hoàn thành 0%</p><span class="disabled-link">Hoàn thành giai đoạn 3 để mở khóa</span></div>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer><div class="footer-info"><strong>LHULearnTrack</strong><address><span>Địa chỉ: Đường Huỳnh Văn Nghệ, phường Trấn Biên, TP Đồng Nai</span><a href="tel:+842812345678">Điện thoại: (028) 1234 5678</a><a href="mailto:hello@lhulearntrack.vn">Email: hello@lhulearntrack.vn</a></address><nav aria-label="Liên kết hỗ trợ"><a href="index.html">Trang chủ</a><a href="#contact">Liên hệ</a></nav></div><p>&copy; 2026 LHULearnTrack - Dashboard học tập cá nhân</p></footer>
+</body>
+</html>

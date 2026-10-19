@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Thống kê điểm số và kết quả học tập trên LHULearnTrack.">
+  <title>LHULearnTrack | Thống kê điểm số</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="brand"><a href="index.html" aria-label="LHULearnTrack - Trang chủ">LHULearnTrack</a></div>
+    <nav aria-label="Điều hướng chính"><input type="checkbox" id="menu-toggle" class="menu-toggle"><label for="menu-toggle" class="menu-button" aria-label="Mở hoặc đóng menu"><span></span><span></span><span></span></label><ul><li><a href="index.html">Trang chủ</a></li><li><a href="dashboard.html">Dashboard cá nhân</a></li><li><a href="learning-path.html">Lộ trình học tập</a></li><li><a href="statistics.html" aria-current="page">Thống kê điểm số</a></li></ul></nav>
+    <details class="account-menu">
+      <summary aria-label="Mở menu quản lý tài khoản">PL</summary>
+      <div class="account-dropdown">
+        <strong>Nguyễn Duy Phúc Lộc</strong>
+        <a href="#profile">Hồ sơ cá nhân</a>
+        <a href="#settings">Cài đặt tài khoản</a>
+        <a href="#help">Trợ giúp</a>
+        <a href="index.html">Đăng xuất</a>
+      </div>
+    </details>
+  </header>
+  <main class="inner-main">
+    <section class="page-intro animate__animated animate__fadeInDown" aria-labelledby="statistics-title" data-aos="fade-up">
+      <p class="eyebrow">Theo dõi tiến bộ</p>
+      <h1 id="statistics-title" class="animate__animated animate__fadeIn">Thống kê điểm số</h1>
+      <p>Nhìn lại kết quả để hiểu điểm mạnh và xác định nội dung cần cải thiện.</p>
+    </section>
+    <section aria-labelledby="score-overview-heading" data-aos="fade-up">
+      <h2 id="score-overview-heading">Tổng quan kết quả</h2>
+      <div class="overview-grid score-overview">
+        <article class="animate__animated animate__zoomIn"><h3>Điểm trung bình</h3><p>8.6</p><span class="trend trend-up" aria-label="Tăng 0.4 điểm so với tháng trước">↑ +0.4 <span aria-hidden="true">so với tháng trước</span></span></article>
+        <article class="animate__animated animate__zoomIn"><h3>Bài đã làm</h3><p>24</p><span class="trend trend-up" aria-label="Tăng 6 bài so với tháng trước">↑ +6 <span aria-hidden="true">bài so với tháng trước</span></span></article>
+        <article class="animate__animated animate__zoomIn"><h3>Điểm cao nhất</h3><p>9.8</p><span class="trend trend-down" aria-label="Giảm 0.2 điểm so với tháng trước">↓ -0.2 <span aria-hidden="true">so với tháng trước</span></span></article>
+        <article class="animate__animated animate__zoomIn"><h3>Tiến bộ tháng này</h3><p>+12%</p><span class="trend trend-up" aria-label="Tăng 3 phần trăm so với tháng trước">↑ +3% <span aria-hidden="true">so với tháng trước</span></span></article>
+      </div>
+    </section>
+    <section class="statistics-panel" aria-labelledby="chart-heading" data-aos="fade-right">
+      <h2 id="chart-heading">Kết quả theo môn học</h2>
+      <p id="chart-description" class="section-description">Tỷ lệ điểm số được quy đổi theo thang 100. Git có kết quả cao nhất với 90%, còn Database cần được luyện tập thêm với 64%.</p>
+      <div class="chart-scroll" tabindex="0" aria-label="Vùng cuộn ngang của biểu đồ kết quả học tập">
+        <div class="bar-chart" role="list" aria-labelledby="chart-heading" aria-describedby="chart-description">
+        <article role="listitem" data-aos="zoom-in" style="--bar-height: 85%" aria-label="HTML và CSS đạt 85 phần trăm"><span class="bar-value">85%</span><div class="bar-column" aria-hidden="true"></div><h3>HTML &amp; CSS</h3></article>
+        <article role="listitem" data-aos="zoom-in" style="--bar-height: 72%" aria-label="JavaScript đạt 72 phần trăm"><span class="bar-value">72%</span><div class="bar-column" aria-hidden="true"></div><h3>JavaScript</h3></article>
+        <article role="listitem" data-aos="zoom-in" style="--bar-height: 78%" aria-label="UI UX đạt 78 phần trăm"><span class="bar-value">78%</span><div class="bar-column" aria-hidden="true"></div><h3>UI/UX</h3></article>
+        <article role="listitem" data-aos="zoom-in" style="--bar-height: 64%" aria-label="Database đạt 64 phần trăm"><span class="bar-value">64%</span><div class="bar-column" aria-hidden="true"></div><h3>Database</h3></article>
+        <article role="listitem" data-aos="zoom-in" style="--bar-height: 90%" aria-label="Git đạt 90 phần trăm"><span class="bar-value">90%</span><div class="bar-column" aria-hidden="true"></div><h3>Git</h3></article>
+        </div>
+      </div>
+    </section>
+    <section class="insight-grid" aria-labelledby="insight-heading" data-aos="fade-up">
+      <div><h2 id="insight-heading">Nhận xét học tập</h2><p>Bạn đang có kết quả tốt ở Git và HTML &amp; CSS. Hãy dành thêm thời gian luyện tập Database để cân bằng nền tảng kỹ thuật.</p></div>
+      <div><h2>Gợi ý tiếp theo</h2><p>Hoàn thành hai bài thực hành JavaScript và xem lại phần truy vấn cơ bản trong Database.</p></div>
+    </section>
+  </main>
+  <footer><div class="footer-info"><strong>LHULearnTrack</strong><address><span>Địa chỉ: Đường Huỳnh Văn Nghệ, phường Trấn Biên, TP Đồng Nai</span><a href="tel:+842812345678">Điện thoại: (028) 1234 5678</a><a href="mailto:hello@lhulearntrack.vn">Email: hello@lhulearntrack.vn</a></address><nav aria-label="Liên kết hỗ trợ"><a href="index.html">Trang chủ</a><a href="#contact">Liên hệ</a></nav></div><p>&copy; 2026 LHULearnTrack - Dashboard học tập cá nhân</p></footer>
+</body>
+</html>

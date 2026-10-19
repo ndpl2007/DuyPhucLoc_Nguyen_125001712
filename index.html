@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="LHULearnTrack - nền tảng quản lý lộ trình học tập cá nhân.">
+  <title>LHULearnTrack | Trang chủ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <a href="index.html" aria-label="LHULearnTrack - Trang chủ">LHULearnTrack</a>
+    </div>
+    <nav aria-label="Điều hướng chính">
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <label for="menu-toggle" class="menu-button" aria-label="Mở hoặc đóng menu">
+        <span></span><span></span><span></span>
+      </label>
+      <ul>
+        <li><a href="index.html" aria-current="page">Trang chủ</a></li>
+        <li><a href="dashboard.html">Dashboard cá nhân</a></li>
+        <li><a href="learning-path.html">Lộ trình học tập</a></li>
+        <li><a href="statistics.html">Thống kê điểm số</a></li>
+      </ul>
+    </nav>
+    <details class="account-menu">
+      <summary aria-label="Mở menu quản lý tài khoản">PL</summary>
+      <div class="account-dropdown">
+        <strong>Nguyễn Duy Phúc Lộc</strong>
+        <a href="#profile">Hồ sơ cá nhân</a>
+        <a href="#settings">Cài đặt tài khoản</a>
+        <a href="#help">Trợ giúp</a>
+        <a href="index.html">Đăng xuất</a>
+      </div>
+    </details>
+  </header>
+
+  <main class="home-main">
+    <section class="home-hero" aria-labelledby="home-heading">
+      <p class="eyebrow">Học tập có định hướng</p>
+      <h1 id="home-heading">Xây dựng tương lai của bạn từng bước một</h1>
+      <p>Theo dõi tiến độ, khám phá lộ trình và hiểu rõ kết quả học tập trên một nền tảng đơn giản, trực quan.</p>
+      <div class="hero-actions">
+        <a class="button button-primary" href="dashboard.html">Mở Dashboard</a>
+        <a class="button button-secondary" href="learning-path.html">Xem lộ trình</a>
+      </div>
+    </section>
+
+    <section aria-labelledby="features-heading">
+      <h2 id="features-heading">Mọi thứ bạn cần để học tốt hơn</h2>
+      <div class="feature-grid">
+        <article>
+          <span class="feature-icon" aria-hidden="true">📊</span>
+          <h3>Dashboard cá nhân</h3>
+          <p>Nắm bắt tiến độ học tập và mục tiêu của bạn trong một màn hình tổng quan.</p>
+          <a href="dashboard.html">Xem dashboard</a>
+        </article>
+        <article>
+          <span class="feature-icon" aria-hidden="true">🧭</span>
+          <h3>Lộ trình rõ ràng</h3>
+          <p>Biết mình đang ở đâu và bước tiếp theo cần hoàn thành là gì.</p>
+          <a href="learning-path.html">Khám phá lộ trình</a>
+        </article>
+        <article>
+          <span class="feature-icon" aria-hidden="true">📈</span>
+          <h3>Thống kê trực quan</h3>
+          <p>Đánh giá kết quả qua điểm số và biểu đồ dễ đọc, dễ theo dõi.</p>
+          <a href="statistics.html">Xem thống kê</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="home-summary" aria-labelledby="summary-heading">
+      <div>
+        <p class="eyebrow">Tiến độ hiện tại</p>
+        <h2 id="summary-heading">Bạn đã hoàn thành 68% mục tiêu tháng này</h2>
+        <p>Tiếp tục duy trì nhịp học đều đặn để chinh phục giai đoạn tiếp theo.</p>
+      </div>
+      <a class="button button-primary" href="dashboard.html">Tiếp tục học</a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-info">
+      <strong>LHULearnTrack</strong>
+      <address>
+        <span>Địa chỉ: Đường Huỳnh Văn Nghệ, phường Trấn Biên, TP Đồng Nai</span>
+        <a href="tel:+842812345678">Điện thoại: (028) 1234 5678</a>
+        <a href="mailto:hello@lhulearntrack.vn">Email: hello@lhulearntrack.vn</a>
+      </address>
+      <nav aria-label="Liên kết hỗ trợ">
+        <a href="index.html">Trang chủ</a>
+        <a href="#contact">Liên hệ</a>
+      </nav>
+    </div>
+    <p>&copy; 2026 LHULearnTrack - Dashboard học tập cá nhân</p>
+  </footer>
+</body>
+</html>
