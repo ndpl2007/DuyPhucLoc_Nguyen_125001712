@@ -1,6 +1,6 @@
 # NHẬT KÝ PROMPT ENGINEERING (VIBE CODING LOG)
-- **Họ và tên:**
-- **MSSV:**
+- **Họ và tên:** Nguyễn Duy Phúc Lộc
+- **MSSV:** 125001712
 - **Tên đề tài Website:** Dashboard Cá nhân & Lộ trình Học tập (The Learning Path)
 - **Công cụ AI đã sử dụng:** GitHub Copilot
 
@@ -325,3 +325,8 @@ Logo và tên tiêu đề Learn Track sẽ đưa ra giữa. Lược bỏ dòng m
 - **Prompt đã dùng:** II. YÊU CẦU KỸ THUẬT VÀ KHUNG TỐI THIỂU CỦA WEBSITE ... Rà soát lại xem đã có đủ như yêu cầu chưa
 - **Kết quả AI tạo ra:** Kiểm tra semantic HTML5, CSS Variables, Grid/Flexbox, Animate.css, AOS, hover và focus trên toàn bộ website; đồng bộ liên kết thư viện, class Animate.css và thuộc tính `data-aos` cho trang chủ.
 - **Nhận xét & Tinh chỉnh của SV:** Giữ website không dùng JavaScript nên AOS CDN được kết hợp với fallback CSS hiện có để nội dung vẫn hiển thị khi không có JavaScript.
+
+### Lần 39: Bổ sung thông tin sinh viên vào prompt log
+- **Prompt đã dùng:** Bổ sung tên Nguyễn Duy Phúc Lộc và MSSV 125001712 vào prompt log và push luôn đi
+- **Kết quả AI tạo ra:** Cập nhật họ tên và MSSV ở phần thông tin đầu file `PROMPT_LOG.md`.
+- **Nhận xét & Tinh chỉnh của SV:** Thông tin sinh viên cần được điền đầy đủ để hoàn thiện hồ sơ bài tập.
