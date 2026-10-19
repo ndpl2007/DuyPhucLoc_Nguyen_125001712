@@ -1,7 +1,7 @@
 # NHẬT KÝ PROMPT ENGINEERING (VIBE CODING LOG)
 - **Họ và tên:** Nguyễn Duy Phúc Lộc
 - **MSSV:** 125001712
-- **Tên đề tài Website:** Dashboard Cá nhân & Lộ trình Học tập (The Learning Path)
+- **Tên đề tài Website:** Dashboard Cá nhân và Lộ trình Học tập (The Learning Path)
 - **Công cụ AI đã sử dụng:** GitHub Copilot
 
 ## 1. Quá trình xây dựng và tinh chỉnh website
